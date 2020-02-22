@@ -56,7 +56,8 @@ router.post('/', validateProject, (req, res) => {
 router.put('/:id', validateProjectId, (req, res) => {
     const changes = req.body;
     const id = req.params.id;
-
+    const Project = req.body;
+    
     Project.update(id, changes)
     .then(change => {
         res.status(200).json(change)

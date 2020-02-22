@@ -1,5 +1,5 @@
 const express = require('express');
-const Action = require('./actionModel');
+const Action = require('../helpers/actionModel');
 
 const router = express.Router();
 
